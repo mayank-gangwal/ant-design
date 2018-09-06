@@ -51,15 +51,15 @@ export default class LoginPage extends Component {
     return (
       <div className={styles.main}>
         <Login defaultActiveKey={type} onTabChange={this.onTabChange} onSubmit={this.handleSubmit}>
-          <Tab key="account" tab="账户密码登录">
+          <Tab key="account" tab="Account Password">
             {login.status === 'error' &&
               login.type === 'account' &&
               !submitting &&
-              this.renderMessage('账户或密码错误（admin/888888）')}
+              this.renderMessage('Incorrect ID or Password（admin/888888）')}
             <UserName name="userName" placeholder="admin/user" />
             <Password name="password" placeholder="888888/123456" />
           </Tab>
-          <Tab key="mobile" tab="手机号登录">
+          <Tab key="mobile" tab="Mobile Number">
             {login.status === 'error' &&
               login.type === 'mobile' &&
               !submitting &&
@@ -69,20 +69,20 @@ export default class LoginPage extends Component {
           </Tab>
           <div>
             <Checkbox checked={autoLogin} onChange={this.changeAutoLogin}>
-              自动登录
+              Remember
             </Checkbox>
             <a style={{ float: 'right' }} href="">
-              忘记密码
+              Forget Password
             </a>
           </div>
-          <Submit loading={submitting}>登录</Submit>
+          <Submit loading={submitting}>LogIn</Submit>
           <div className={styles.other}>
-            其他登录方式
+            Other Login Methods
             <Icon className={styles.icon} type="alipay-circle" />
             <Icon className={styles.icon} type="taobao-circle" />
             <Icon className={styles.icon} type="weibo-circle" />
             <Link className={styles.register} to="/user/register">
-              注册账户
+              Register Account
             </Link>
           </div>
         </Login>

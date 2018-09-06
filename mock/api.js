@@ -69,7 +69,7 @@ export function fakeList(count) {
       owner: user[i % 10],
       title: titles[i % 8],
       avatar: avatars[i % 8],
-      cover: parseInt(i / 4, 10) % 2 === 0 ? covers[i % 4] : covers[3 - i % 4],
+      cover: parseInt(i / 4, 10) % 2 === 0 ? covers[i % 4] : covers[3 - (i % 4)],
       status: ['active', 'exception', 'normal'][i % 3],
       percent: Math.ceil(Math.random() * 50) + 50,
       logo: avatars[i % 8],
@@ -193,99 +193,99 @@ export const getActivities = [
     id: 'trend-1',
     updatedAt: new Date(),
     user: {
-      name: '曲丽丽',
+      name: 'Name 1',
       avatar: avatars2[0],
     },
     group: {
-      name: '高逼格设计天团',
+      name: 'Group 1',
       link: 'http://github.com/',
     },
     project: {
-      name: '六月迭代',
+      name: 'Project 1',
       link: 'http://github.com/',
     },
-    template: '在 @{group} 新建项目 @{project}',
+    template: 'in @{group} Project: @{project}',
   },
   {
     id: 'trend-2',
     updatedAt: new Date(),
     user: {
-      name: '付小小',
+      name: 'Name 2',
       avatar: avatars2[1],
     },
     group: {
-      name: '高逼格设计天团',
+      name: 'Group 2',
       link: 'http://github.com/',
     },
     project: {
-      name: '六月迭代',
+      name: 'Project 2',
       link: 'http://github.com/',
     },
-    template: '在 @{group} 新建项目 @{project}',
+    template: 'in @{group} Project @{project}',
   },
   {
     id: 'trend-3',
     updatedAt: new Date(),
     user: {
-      name: '林东东',
+      name: 'Name 3',
       avatar: avatars2[2],
     },
     group: {
-      name: '中二少女团',
+      name: 'Group 3',
       link: 'http://github.com/',
     },
     project: {
-      name: '六月迭代',
+      name: 'Project 3',
       link: 'http://github.com/',
     },
-    template: '在 @{group} 新建项目 @{project}',
+    template: 'in @{group} Project @{project}',
   },
   {
     id: 'trend-4',
     updatedAt: new Date(),
     user: {
-      name: '周星星',
+      name: 'Name 4',
       avatar: avatars2[4],
     },
     project: {
-      name: '5 月日常迭代',
+      name: 'Project 4',
       link: 'http://github.com/',
     },
-    template: '将 @{project} 更新至已发布状态',
+    template: 'Will update to published status of @{project}',
   },
   {
     id: 'trend-5',
     updatedAt: new Date(),
     user: {
-      name: '朱偏右',
+      name: 'Name 5',
       avatar: avatars2[3],
     },
     project: {
-      name: '工程效能',
+      name: 'Group 5',
       link: 'http://github.com/',
     },
     comment: {
-      name: '留言',
+      name: 'Comment 1',
       link: 'http://github.com/',
     },
-    template: '在 @{project} 发布了 @{comment}',
+    template: 'in @{project} announced @{comment}',
   },
   {
     id: 'trend-6',
     updatedAt: new Date(),
     user: {
-      name: '乐哥',
+      name: 'Name 6',
       avatar: avatars2[5],
     },
     group: {
-      name: '程序员日常',
+      name: 'Group 6',
       link: 'http://github.com/',
     },
     project: {
-      name: '品牌迭代',
+      name: 'Project 6',
       link: 'http://github.com/',
     },
-    template: '在 @{group} 新建项目 @{project}',
+    template: 'in @{group} Project @{project}',
   },
 ];
 

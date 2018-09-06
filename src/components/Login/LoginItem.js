@@ -16,7 +16,7 @@ function generator({ defaultProps, defaultRules, type }) {
       };
 
       static defaultProps = {
-        buttonText: '获取验证码',
+        buttonText: 'Get Code',
       };
 
       constructor(props) {

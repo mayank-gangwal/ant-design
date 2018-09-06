@@ -104,7 +104,7 @@ class StandardTable extends PureComponent {
                   </span>
                 ))}
                 <a onClick={this.cleanSelectedKeys} style={{ marginLeft: 24 }}>
-                  清空
+                  Empty
                 </a>
               </Fragment>
             }

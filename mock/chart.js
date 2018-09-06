@@ -133,7 +133,7 @@ for (let i = 0; i < 20; i += 1) {
 
 const radarOriginData = [
   {
-    name: '个人',
+    name: 'Personal',
     ref: 10,
     koubei: 8,
     output: 4,
@@ -141,7 +141,7 @@ const radarOriginData = [
     hot: 7,
   },
   {
-    name: '团队',
+    name: 'Team',
     ref: 3,
     koubei: 9,
     output: 6,
@@ -149,7 +149,7 @@ const radarOriginData = [
     hot: 1,
   },
   {
-    name: '部门',
+    name: 'Department',
     ref: 4,
     koubei: 1,
     output: 6,
@@ -161,11 +161,11 @@ const radarOriginData = [
 //
 const radarData = [];
 const radarTitleMap = {
-  ref: '引用',
-  koubei: '口碑',
-  output: '产量',
-  contribute: '贡献',
-  hot: '热度',
+  ref: 'Degree of Completion',
+  koubei: 'Effectiveness',
+  output: 'Output',
+  contribute: 'Contribution',
+  hot: 'Rate',
 };
 radarOriginData.forEach(item => {
   Object.keys(item).forEach(key => {

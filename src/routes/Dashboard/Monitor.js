@@ -141,7 +141,7 @@ export default class Monitor extends PureComponent {
               bodyStyle={{ textAlign: 'center', fontSize: 0 }}
               bordered={false}
             >
-              <WaterWave height={161} title="补贴资金剩余" percent={34} />
+              <WaterWave height={161} title="补贴资金剩余" percent={55} />
             </Card>
           </Col>
         </Row>

@@ -264,7 +264,7 @@ export default class Register extends Component {
                   className={styles.getCaptcha}
                   onClick={this.onGetCaptcha}
                 >
-                  {count ? `${count} s` : '获取验证码'}
+                  {count ? `${count} s` : 'Get Code'}
                 </Button>
               </Col>
             </Row>
