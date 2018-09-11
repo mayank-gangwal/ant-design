@@ -137,19 +137,19 @@ export default class GlobalHeader extends PureComponent {
             popupAlign={{ offset: [20, -16] }}
           >
             <NoticeIcon.Tab
-              list={noticeData['通知']}
+              list={noticeData['Notice']}
               title="Notice"
               emptyText="You have viewed all Notifications"
               emptyImage="https://gw.alipayobjects.com/zos/rmsportal/wAhyIChODzsoKIOBHcBk.svg"
             />
             <NoticeIcon.Tab
-              list={noticeData['消息']}
+              list={noticeData['News']}
               title="News"
               emptyText="You have read all the messages"
               emptyImage="https://gw.alipayobjects.com/zos/rmsportal/sAuJeJzSKbUmHfBQRzmZ.svg"
             />
             <NoticeIcon.Tab
-              list={noticeData['待办']}
+              list={noticeData['Upcoming']}
               title="Upcoming"
               emptyText="You have completed all the to-do"
               emptyImage="https://gw.alipayobjects.com/zos/rmsportal/HsIsxMZiWKrNUavQUXqx.svg"
